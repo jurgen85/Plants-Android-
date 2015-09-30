@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/plantThumb"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/plant_list_item_vertical_margin"
+        android:paddingBottom="@dimen/plant_list_item_vertical_margin"
+        android:maxWidth="50dp"
+        android:maxHeight="50dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/plantNameLabel"
+        android:paddingTop="@dimen/plant_list_item_vertical_margin"
+        android:layout_toRightOf="@+id/plantThumb"
+        android:layout_toEndOf="@+id/plantThumb"
+        android:paddingLeft="@dimen/activity_horizontal_margin"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text=""
+        android:id="@+id/plantTimerLabel"
+        android:paddingBottom="@dimen/plant_list_item_vertical_margin"
+        android:layout_toRightOf="@+id/plantThumb"
+        android:layout_below="@+id/plantNameLabel"
+        android:paddingLeft="@dimen/activity_horizontal_margin"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/plantTimerReset"
+        android:paddingBottom="@dimen/plant_list_item_vertical_margin"
+        android:layout_toRightOf="@+id/plantTimerLabel"
+        android:layout_below="@+id/plantNameLabel"
+        android:paddingLeft="@dimen/activity_horizontal_margin"/>
+</RelativeLayout>
